@@ -4,4 +4,16 @@ metadata:
   name: anthos-bundles-ap-v1
 resources:
 # - ../bundles/*
-- ../anthos-bundles/pci-dss-v3.2.1
+# - ../anthos-bundles/pci-dss-v3.2.1
+- ../bundles/asm-policy-v0.0.1
+
+
+patches:
+- target:
+    kind: AsmPeerAuthnMeshStrictMtls
+    # group: constraints.gatekeeper.sh d
+    name: asm-policy-v0.0.1-asm-peer-authn-mesh-strict-mtls
+  patch: |-
+    - op: replace
+      path: "/spec/enforcementAction"
+      value: "deny"  
