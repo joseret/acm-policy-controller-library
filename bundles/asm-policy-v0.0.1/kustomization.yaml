@@ -22,6 +22,6 @@ resources:
 # - 1.2.1_asm-authz-policy-mesh-default-deny.yaml
 # - 1.2.2_asm-authz-policy-normalization.yaml
 # - 1.2.3_asm-authz-policy-safe-pattern.yaml
-# - 1.3.1_asm-peer-authn-mesh-strict-mtls.yaml
+- 1.3.1_asm-peer-authn-mesh-strict-mtls.yaml
 # - 1.3.2_asm-peer-authn-strict-mtls.yaml
 # - 1.4.1_asm-request-authn-prohibited-output-headers.yaml
