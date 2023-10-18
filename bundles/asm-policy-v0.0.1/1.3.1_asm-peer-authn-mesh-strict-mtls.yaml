@@ -33,6 +33,12 @@ metadata:
       }"
 spec:
   enforcementAction: dryrun
+  match:
+    kinds:
+    - kinds: 
+      - AsmPeerAuthnMeshStrictMtls
+      apiGroups:
+      - "constraints.gatekeeper.sh"
   parameters:
     rootNamespace: istio-system
     strictnessLevel: High # kpt-set: ${strictness-level}
