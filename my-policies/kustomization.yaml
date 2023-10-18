@@ -16,4 +16,4 @@ patches:
   patch: |-
     - op: replace
       path: "/spec/enforcementAction"
-      value: "deny"  
+      value: "dryrun"  
